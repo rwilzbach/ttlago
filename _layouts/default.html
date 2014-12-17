@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+		<h1><a href="/">{{ site.title }}</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/description">{{ site.lang.[page.lang].description}}</a>
+                </li>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/arrival">{{ site.lang.[page.lang].arrival}}</a>
+                </li>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/facilities">{{ site.lang.[page.lang].facilities}}</a>
+                </li>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/freetime">{{ site.lang.[page.lang].freetime}}</a>
+                </li>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/offers">{{ site.lang.[page.lang].offers}}</a>
+                </li>
+                <!--<li><a href="{{ site.baseurl }}/{{ page.lang }}/prices">{{ site.lang.[page.lang].prices }}</a>-->
+                <!--</li>-->
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/request">{{ site.lang.[page.lang].request }} </a>
+                </li>
+                <li><a href="{{ site.baseurl }}/{{ page.lang }}/presentations">{{ site.lang.[page.lang].presentations}} </a>
+                </li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+	<section id="main" class="wrapper" style="background-color: rgba(228, 115, 18, 0.35);">
+        <div class="container">
+
+		
+            <div id=flags style="float: right; margin-right: 20px; margin-top: 10px">
+
+                <a class="page-link" href="{{ site.baseurl }}/de/"><img src="{{ site.baseurl }}/img/flags/de.svg" height="20px" />
+                </a>
+                <a class="page-link" href="{{ site.baseurl }}/en/"><img src="{{ site.baseurl }}/img/flags/en.svg" height="20px" />
+                </a>
+                <a class="page-link" href="{{ site.baseurl }}/es/"><img src="{{ site.baseurl }}/img/flags/es.svg" height="20px" />
+                </a>
+            </div>
+
+		<div id=crazy-banner style="margin-top: 10px">
+				<img src="{{ site.baseurl }}/img/logo.png" width=200px height=200px style="float: left" />
+
+				<img src="{{ site.baseurl }}/img/banner_s.jpg" style="max-width: 100%; max-height: 200px; display: block; margin: 0 auto" />
+
+				<a class="site-title" href="{{ site.baseurl }}/">Teenie Tourismus La Gomera </a>
+			</div>
+
+
+
+            <div class="wrapper">
+
+                <header class="major">
+					<h2>{{ page.title }}</h2>
+                </header>
+
+                {{ content }}
+
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+           <div class="row">
+                <div class="12u 12u$(medium)">
+                    <ul class="copyright">
+                        <li><a href="{{ site.baseurl }}/{{ page.lang }}/contact">{{ site.lang.[page.lang].contact }} </a>
+                        </li>
+                        <li><a href="{{ site.baseurl }}/{{ page.lang }}/imprint">{{ site.lang.[page.lang].imprint}}</a>
+                        </li>
+                        <li><a href="http://templated.co">Design</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--<div class="4u$ 12u$(medium)">-->
+                    <!--<ul class="icons">-->
+                        <!--<li>-->
+                            <!--<a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

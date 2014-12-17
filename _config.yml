@@ -1,0 +1,52 @@
+# Site settings
+title: TTLaGo
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+imgpath: /img/user/small
+templatepath: /transit
+
+# Build settings
+markdown: kramdown
+
+lang:
+    en:
+        arrival: Arrival
+        contact: Contact  
+        description: Description
+        facilities : Facilities
+        freetime: Leisure activities
+        imprint: Legal information
+        prices: Prices
+        offers: Offers
+        request: Enquiry
+        presentations: Presentations
+    de:
+        arrival: Anreise
+        contact: Contact  
+        contact: Kontakt
+        description: Beschreibung
+        facilities : Ausstattung
+        freetime: Freizeit
+        imprint: Impressum
+        prices: Preise
+        offers: Angebote
+        request: Anfrage
+        presentations: Präsentationen
+    es:
+        arrival: Llegada 
+        contact: Contacto 
+        description: Descripción 
+        facilities: Instalación 
+        freetime: Ocio
+        imprint: Aviso
+        prices: Precios
+        offers: Oferta
+        request: Presupuesto
+        presentations: Presentaciones
