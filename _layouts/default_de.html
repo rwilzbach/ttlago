@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <div id="bg">
+
+        <header class="site-header">
+
+
+            <a class="page-link" href="{{ site.baseurl }}/de/">De</a>
+            <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
+            <a class="page-link" href="{{ site.baseurl }}/es/">Es</a>
+
+            <img src="/img/logo.png" width=100px height=100px />
+            <div class="wrapper">
+
+                <!--            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+
+                <nav class="site-nav">
+                    <div class="trigger">
+                        <a class="page-link" href="{{ site.baseurl }}/de/description">Beschreibung</a>
+                        <a class="page-link" href="{{ site.baseurl }}/de/arrival">Anreise</a>
+                        <a class="page-link" href="{{ site.baseurl }}/de/facilities">Ausstattung</a>
+                        <a class="page-link" href="{{ site.baseurl }}/de/freetime">Freizeit</a>
+                        <a class="page-link" href="{{ site.baseurl }}/de/offers">Angebote</a>
+                        <a class="page-link" href="{{ site.baseurl }}/de/prices">Preise</a>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+
+        <footer class="site-footer">
+
+            <div class="wrapper">
+
+                <div class="footer-col-wrapper">
+                    <div class="footer-col  footer-col-1">
+                        <ul class="contact-list">
+                            <li><a class="page-link" href="{{ site.baseurl }}/de/contact">Kontakt</a>
+                                <li><a class="page-link" href="{{ site.baseurl }}/de/impressum">Impressum</a>
+                                </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col  footer-col-2">
+                    </div>
+
+                    <div class="footer-col  footer-col-3">
+                        <p class="text">Some text.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
