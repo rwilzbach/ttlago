@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <header class="site-header">
+
+		
+		<a class="page-link" href="{{ site.baseurl }}/de/"><img src="{{ site.baseurl }}/img/flags/de.png" /></a>
+		<a class="page-link" href="{{ site.baseurl }}/en/"><img src="{{ site.baseurl }}/img/flags/us.png" /></a>
+		<a class="page-link" href="{{ site.baseurl }}/es/"><img src="{{ site.baseurl }}/img/flags/es.png" /></a>
+		<br>
+
+  			<img src="{{ site.baseurl }}/img/logo.png" width=100px height=100px />
+  			<img src="{{ site.baseurl }}/img/banner_s.jpg" height=200px />
+        <div class="wrapper">
+
+			<!--            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+			<a class="site-title" href="{{ site.baseurl }}/">Teenie Tourismus la Gomera </a> 
+
+            <nav class="site-nav">
+                <div class="trigger">
+					<a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/description">{{ site.lang.[page.lang].description}}
+</a>
+					<a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/arrival">{{ site.lang.[page.lang].arrival}}
+</a>
+                    <a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/facilities">{{ site.lang.[page.lang].facilities}}
+</a>
+                    <a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/freetime">{{ site.lang.[page.lang].freetime}}
+</a>
+                    <a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/offers">{{ site.lang.[page.lang].offers}}
+</a>
+                    <a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/prices">{{ site.lang.[page.lang].prices }}
+</a>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="page-content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </div>
+
+    <footer class="site-footer">
+
+        <div class="wrapper">
+
+            <div class="footer-col-wrapper">
+                <div class="footer-col  footer-col-1">
+                    <ul class="contact-list">
+                    	<li><a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/contact">{{ site.lang.[page.lang].contact }}
+</a>
+                    	<li><a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/imprint">{{ site.lang.[page.lang].imprint}}
+</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col  footer-col-2">
+                </div>
+
+                <div class="footer-col  footer-col-3">
+                    <p class="text">Some text.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
