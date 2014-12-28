@@ -6,11 +6,11 @@ permalink: /en/offers/
 ---
 
 <div style="display: flex; flex-wrap: wrap">
-{% for page in site.pages %}
+{% for tpage in site.pages %}
 
-{% if (page.lang == "en" and page.cat == "offer" %}
+{% if (tpage.cat == "offer" and tpage.lang == page.lang) %}
 
-<div style="width: 200px"> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></div>
+<div style="width: 200px"> <a href="{{ site.baseurl }}{{ tpage.url }}">{{ tpage.title }}</a></div>
 
 {% endif %}
 {% endfor %}

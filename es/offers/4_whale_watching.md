@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Whale watching
-lang: en
-permalink: /en/offers/whalewatching/
+lang: es
+permalink: /es/offers/whale_watching/
 cat: offer
 ---
 
